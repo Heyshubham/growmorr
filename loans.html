@@ -4,74 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrowMorr - Loans</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Add the same styles from index.html here for consistency */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://images.unsplash.com/photo-1532042090325-8c5d22b5e0e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MTV8MHwxfGFsbHwxfHx8fHx8fHwxNjc1NDU0NjA0&ixlib=rb-1.2.1&q=80&w=1920') no-repeat center center/cover;
+            background-color: #f8f9fa;
             color: #343a40;
         }
         header {
-            background-color: rgba(40, 167, 69, 0.8);
+            background-color: #28a745;
             color: white;
-            padding: 40px 0;
+            padding: 20px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
         }
         nav {
             background-color: rgba(40, 167, 69, 0.8);
             padding: 10px;
-            text-align: center;
         }
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffd700;
         }
         .container {
             width: 85%;
             margin: auto;
             padding: 20px 0;
         }
-        .services {
-            background-color: white;
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        .card {
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        h2 {
-            color: #28a745;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .services ul li {
-            padding: 10px 0;
-            font-size: 1.1em;
-            border-bottom: 1px solid #e9ecef;
-        }
-        .services ul li:last-child {
-            border-bottom: none;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
         footer {
             background-color: #343a40;
@@ -86,33 +52,92 @@
 <body>
 
     <header>
-        <h1>GrowMorr</h1>
-        <p>Your Trusted Financial Partner</p>
+        <h1>GrowMorr - Loans</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="loans.html">Loans</a>
-        <a href="insurance.html">Insurance</a>
-        <a href="investment.html">Investment</a>
-        <a href="#contact">Contact Us</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">GrowMorr</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="insurance.html">Insurance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="investment.html">Investment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
-        <section class="services">
-            <h2>Loan Options</h2>
-            <ul>
-                <li><strong>Personal Loans:</strong> Flexible loans for personal needs with competitive interest rates.</li>
-                <li><strong>Home Loans:</strong> Affordable home financing options to help you buy your dream home.</li>
-                <li><strong>Car Loans:</strong> Drive your dream car with our tailored car loan solutions.</li>
-                <li><strong>Business Loans:</strong> Financial support for startups and established businesses.</li>
-            </ul>
-        </section>
+        <h2>Loan Options</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Loan</h5>
+                        <p class="card-text">Flexible personal loans to meet your individual financial needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Loan</h5>
+                        <p class="card-text">Loans tailored for your business growth and expansion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Loan</h5>
+                        <p class="card-text">Affordable home loans to help you buy your dream home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Property Loan</h5>
+                        <p class="card-text">Loans for purchasing or investing in property.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Loan Against Securities</h5>
+                        <p class="card-text">Quick loans against your securities for immediate cash needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Other Loan</h5>
+                        <p class="card-text">Custom loan options tailored to your unique requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2024 GrowMorr. All rights reserved.</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
