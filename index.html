@@ -6,92 +6,143 @@
     <title>GrowMorr - Your Trusted Financial Partner</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #28a745;
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
         }
         .container {
-            width: 80%;
+            width: 85%;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
         .services, .reviews, .contact-form {
             background-color: white;
-            padding: 20px;
+            padding: 30px;
             margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        h1, h2, h3 {
-            color: #333;
+        .services:hover, .reviews:hover, .contact-form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #28a745;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
         .services ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
         .services ul li {
             padding: 10px 0;
-            font-size: 18px;
+            font-size: 1.1em;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .services ul li:last-child {
+            border-bottom: none;
         }
         .reviews blockquote {
-            font-size: 16px;
+            font-size: 1.2em;
             margin: 20px 0;
-            padding: 15px;
-            background: #eee;
-            border-left: 5px solid #4CAF50;
+            padding: 20px;
+            background: #f1f3f5;
+            border-left: 5px solid #28a745;
+            border-radius: 5px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .reviews blockquote em {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #6c757d;
         }
         .contact-form iframe {
             width: 100%;
-            height: 500px;
-            border: 0;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to GrowMorr</h1>
-        <p>Your Trusted Financial Partner for Investments, Insurance, and Loans</p>
+        <h1>GrowMorr</h1>
+        <p>Your Trusted Financial Partner</p>
     </header>
 
     <div class="container">
         <section class="services">
             <h2>Our Services</h2>
             <ul>
-                <li><strong>Investment Solutions:</strong> Grow your wealth with our tailored investment plans.</li>
-                <li><strong>Insurance Policies:</strong> Secure your future with our comprehensive insurance coverage.</li>
-                <li><strong>Loan Facilities:</strong> Get the financial support you need with our flexible loan options.</li>
+                <li><strong>Investment Solutions:</strong> Tailored investment plans designed to grow your wealth securely.</li>
+                <li><strong>Insurance Policies:</strong> Comprehensive insurance coverage to protect your future.</li>
+                <li><strong>Loan Facilities:</strong> Flexible loan options to provide the financial support you need.</li>
             </ul>
         </section>
 
         <section class="reviews">
-            <h2>What Our Customers Say</h2>
+            <h2>Customer Reviews</h2>
             <blockquote>
-                "GrowMorr helped me secure my future with their fantastic insurance plans. Their team is supportive and professional." - <em>Jane Doe</em>
+                "GrowMorr's investment advice has been a game-changer for my financial portfolio. I trust them completely." 
+                <em>- Shubham Agrawal</em>
             </blockquote>
             <blockquote>
-                "Thanks to GrowMorr, I was able to invest smartly and see great returns. Highly recommended!" - <em>John Smith</em>
+                "Their insurance services are unmatched. I feel secure knowing my family's future is protected."
+                <em>- Pankaj Singh</em>
             </blockquote>
             <blockquote>
-                "Their loan facility is top-notch! The process was smooth, and I got the funds I needed quickly." - <em>Emily Johnson</em>
+                "Quick and easy loan processing! GrowMorr made it possible for me to achieve my business goals."
+                <em>- Sheetal Sharma</em>
             </blockquote>
         </section>
 
         <section class="contact-form">
-            <h2>Get in Touch</h2>
-            <p>Fill out the form below to learn more about how we can help you achieve your financial goals:</p>
+            <h2>Contact Us</h2>
+            <p>We’re here to help you achieve your financial goals. Fill out the form below to get started:</p>
             <!-- Embed your Google Form here -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFjO18RG0tiHg7ABR76sw0tcirc5dqx6mvYcwA2hZMZ3IlOg/viewform?embedded=true" width="640" height="928" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFjO18RG0tiHg7ABR76sw0tcirc5dqx6mvYcwA2hZMZ3IlOg/viewform?embedded=true" width="640" height="928" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 GrowMorr. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
