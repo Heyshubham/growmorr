@@ -24,14 +24,6 @@ header p {
     margin: 10px 0 0;
 }
 
-.services, .reviews, .contact-form {
-    background-color: white;
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
 h2 {
     color: #28a745;
     font-size: 2em;
