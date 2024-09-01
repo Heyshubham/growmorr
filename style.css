@@ -1,12 +1,28 @@
 .card {
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border 0.3s;
     cursor: pointer;
+    border: 2px solid transparent; /* Maintain the same border width */
+    background-color: #fff; /* Default background color */
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    background-color: #f0f0f5;
+    transform: translateY(-5px) scale(1.03); /* Scale up slightly */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    border: 2px solid #1e77d0; /* Consistent border color on hover */
+    background-color: #f0f0f5; /* Slightly darker background on hover */
+}
+
+.card:active {
+    transform: translateY(-2px) scale(0.98); /* Slightly scale down on click */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+/* In style.css */
+.card-body i {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-top: 10px; /* Add some spacing */
+    display: block; /* Make the icon a block element */
+    text-align: right; /* Center the icon */
 }
 
 
@@ -25,10 +41,8 @@
     width: 0%;
     height: 2px;
     /* Adjust underline thickness */
-    background-color: #1e77d0;
-    /* Choose your underline color */
-    transition: width 0.3s ease;
-    /* Add a smooth transition */
+    background-color: #1e77d0; /* Choose your underline color */
+    transition: width 0.3s ease; /* Add a smooth transition */
 }
 
 /* Show underline on hover and for active section */
