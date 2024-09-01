@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .card {
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border 0.3s;
     cursor: pointer;
@@ -6,9 +10,10 @@
 }
 
 .card:hover {
-    transform: translateY(-5px) scale(1.03); /* Scale up slightly */
+    transform: translateY(-5px) scale(1.05); /* Scale up slightly */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
     border: 2px solid #1e77d0; /* Consistent border color on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition */
 }
 
 .card:active {
