@@ -3,8 +3,6 @@
 
 <head>
     <style>
-        /* In your existing CSS file or within a <style> tag */
-
         .card {
             transition: transform 0.3s, box-shadow 0.3s;
             /* Add transitions for smooth effect */
@@ -43,24 +41,58 @@
         .nav-link.active::after {
             width: 100%;
         }
-
         header {
-            background: linear-gradient(to bottom right, #007bff, #00c853); /* Blue to Green gradient */
+            background: linear-gradient(45deg, #007bff, #00c853, #ff6f00);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
             text-align: center;
-            padding: 100px 0; /* Adjust padding as needed */
+            padding: 100px 0;
+        }
+        
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         header h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
+            font-size: 4rem;
+            font-weight: 700;
             color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
         header p {
-            color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 20px;
         }
+
+        header h1, header p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        header p {
+            animation-delay: 0.3s;
+        }
+        header {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        
         
     </style>
     <script>
