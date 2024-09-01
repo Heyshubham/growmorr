@@ -2,98 +2,6 @@
 <html lang="en">
 
 <head>
-    <style>
-        .card {
-            transition: transform 0.3s, box-shadow 0.3s;
-            /* Add transitions for smooth effect */
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            /* Move card slightly up on hover */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            /* Add a more pronounced shadow */
-        }
-
-        /* Style for all nav links */
-        .nav-link {
-            position: relative;
-            /* To position the underline */
-        }
-
-        /* Initially hide the underline */
-        .nav-link::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            /* Adjust underline thickness */
-            background-color: #1e77d0;
-            /* Choose your underline color */
-            transition: width 0.3s ease;
-            /* Add a smooth transition */
-        }
-
-        /* Show underline on hover and for active section */
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        header {
-            background: linear-gradient(45deg, #1a4e82, #1f62a6, #1e77d0);
-            background-size: 400% 400%;
-            animation: gradientAnimation 10s ease infinite;
-            text-align: center;
-            padding: 100px 0;
-        }
-        
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        header h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        
-        header p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-top: 20px;
-        }
-        
-        header h1, header p {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1s ease forwards;
-        }
-        
-        header p {
-            animation-delay: 0.3s;
-        }
-        
-        header {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-    </style>
     <script>
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
@@ -120,6 +28,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrowMorr Finance</title>
+    <link rel="stylesheet" href="style.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
