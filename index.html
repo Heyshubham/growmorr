@@ -84,53 +84,88 @@ window.addEventListener('scroll', () => {
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
-            <div class="row">
-                <!-- Loans Card -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="#loans-section" class="text-decoration-none">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Loans</h5>
-                                <p class="card-text">Explore flexible loan options to meet your financial needs.</p>
-                                <i class="bi bi-arrow-right"></i> <span class="visually-hidden">Click for more</span> </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Insurance Card -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="#insurance-section" class="text-decoration-none">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Insurance </h5>
-                                <p class="card-text">Protect yourself and your loved ones with our comprehensive
-                                    insurance plans.</p>
-                                    <i class="bi bi-arrow-right"></i> <span class="visually-hidden">Click for more</span> </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Investment Card -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="#investment-section" class="text-decoration-none">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Investment</h5>
-                                <p class="card-text">Grow your wealth securely with our tailored investment solutions.
-                                </p>
-                                <i class="bi bi-arrow-right"></i> <span class="visually-hidden">Click for more</span> </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
+    <section id="about-us" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4 animate__animated animate__fadeInDown">About Us</h2>
+          <p class="text-center animate__animated animate__fadeInUp">
+            At GrowMorr, we specialize in providing top-notch services including Investment Management, Insurance, and Loan Facilities. Our goal is to help you grow your wealth and secure your future.
+          </p>
+      
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <div class="service-card animate__animated animate__fadeInLeft">
+                <h3 class="service-title">Our Services</h3>
+                <div class="accordion" id="servicesAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="loanHeading">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLoan" aria-expanded="true" aria-controls="collapseLoan">
+                        <strong>Loan Facilities</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseLoan" class="accordion-collapse collapse show" aria-labelledby="loanHeading" data-bs-parent="#servicesAccordion">
+                      <div class="accordion-body">
+                        We provide flexible loan options to meet your personal and business needs.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="insuranceHeading">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInsurance" aria-expanded="false" aria-controls="collapseInsurance">
+                        <strong>Insurance Services</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseInsurance" class="accordion-collapse collapse" aria-labelledby="insuranceHeading" data-bs-parent="#servicesAccordion">
+                      <div class="accordion-body">
+                        Secure your life and property with our comprehensive insurance packages.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="investmentHeading">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInvestment" aria-expanded="false" aria-controls="collapseInvestment">
+                         <strong>Investment Management</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseInvestment" class="accordion-collapse collapse" aria-labelledby="investmentHeading" data-bs-parent="#servicesAccordion">
+                      <div class="accordion-body">
+                        We offer expert advice and tools to grow your wealth through tailored investment plans.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="choose-card animate__animated animate__fadeInUp">
+                <h3 class="choose-title">Why Choose Us?</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Expertise</strong> - With years of experience, we provide the best financial advice and solutions.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Personalized Plans</strong> - We tailor our services to meet your specific needs and goals.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Customer Focused</strong> - Your satisfaction and financial success are our top priorities.
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="mission-card animate__animated animate__fadeInRight">
+                <h3 class="mission-title">Our Mission</h3>
+                <p>
+                  To empower individuals and businesses by providing the best financial solutions for wealth growth and security.
+                </p>
+                <a href="#contact" class="btn btn-primary center">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Loans Section -->
     <!-- Loans Section -->

@@ -120,3 +120,13 @@ header {
         transform: translateY(0);
     }
 }
+
+
+
+
+  .service-title, .choose-title, .mission-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
